@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Absolute fallback (used on GitHub Pages where directory listing is unavailable)
         if (fileCandidates.length === 0) {
-            return 'resume_md/YourName_Resume_7th.April.2026.md';
+            return 'resume_md/YourName_Resume_14th.March.2187.md';
         }
 
         // Descending sort by chronological date using regex score extraction
