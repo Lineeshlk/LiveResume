@@ -32,10 +32,29 @@ body {
     background: rgba(229, 229, 229, 0.9);
     border-bottom: 1px solid #ccc;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     z-index: 100;
     font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Demo / mock-resume disclaimer (web only) */
+.demo-notice {
+    flex: 0 0 100%;
+    margin-top: 12px;
+    padding: 6px 10px;
+    border: 1px solid #c9b037;
+    border-left: 4px solid #c9b037;
+    background: #fdf6dd;
+    color: #4a4a4a;
+    font-size: 9pt;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.demo-notice strong {
+    color: #000;
 }
 
 .btn {
