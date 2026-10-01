@@ -1,5 +1,5 @@
 **FirstName LastName**
-CurrentJobTitle @ CurrentOrganization | CurrentCity, CurrentState
+CurrentJobTitle @ CurrentOrganization | CurrentCity, CurrentCountry
 [Email](mailto:myname@website.com) | [LinkedIn](https://www.linkedin.com/in/myname/) | [Google Scholar Link](https://scholar.google.com/citations?user=....) | [Portfolio](https://myname.github.io/)
 
 ## **CAREER PROFILE**
@@ -36,13 +36,13 @@ CurrentJobTitle @ CurrentOrganization | CurrentCity, CurrentState
 
 
 
-### **GlobalSoft Solutions | Austin, TX & Seattle, WA** | 2015-2023
+### **GlobalSoft Solutions | Northport & Lake Verity, Arcadia** | 2015-2023
 
 #### Senior Software Architect – Enterprise (Mar 2023 – Dec 2023)
 
-* As the software architect for North America and EMEA enterprise engagements, analyzed and defined **scalability and availability requirements** for mission-critical SaaS applications.
+* As the software architect for Arcadia and Verdania enterprise engagements, analyzed and defined **scalability and availability requirements** for mission-critical SaaS applications.
 * Analyzed and **mapped evolving enterprise workloads to infrastructure requirements**, to technically influence the cloud platform roadmap.
-* **Evangelized platform capabilities** to enterprise customers through demos and workshops in the US and Europe.
+* **Evangelized platform capabilities** to enterprise customers through demos and workshops across Arcadia and Verdania.
 
 #### Senior Software Architect – Data Solutions (Aug 2021 – Mar 2023)
 
@@ -56,13 +56,13 @@ CurrentJobTitle @ CurrentOrganization | CurrentCity, CurrentState
 * Developed industry-leading multi-tenant SaaS platform with high-availability architecture serving millions of end users.
 * Created a **novel request routing and caching mechanism** that improved API response times by 40%. Filed **2 patent disclosures** on distributed caching strategies.
 
-### **StartupXYZ | San Francisco, CA**
+### **StartupXYZ | Silverlake City, Arcadia**
 
 #### Backend Engineer (Jun 2014 – Jun 2015)
 
 * Designed and implemented **RESTful APIs** for a consumer mobile application used by a leading retail brand.
 
-### **TechCorp | Bangalore, India**
+### **TechCorp | Rivermouth, Verdania**
 
 #### Junior Software Engineer – Enterprise Systems (Sep 2010 – June 2012)
 
@@ -70,15 +70,15 @@ CurrentJobTitle @ CurrentOrganization | CurrentCity, CurrentState
 
 ## **ACADEMIC EXPERIENCE**
 
-### **(Non-degree) Graduate Coursework in Data Science \- Lakeside University, OR**
+### **(Non-degree) Graduate Coursework in Data Science \- Lakeside University, Arcadia**
 
 \[01/2019 \- 06/2021\]: Data Mining, Statistical Learning, Big Data Systems, Database Management, Algorithm Design, Applied Mathematics.
 
-### **M.S. in Software Engineering \- Riverside Tech University, CA**
+### **M.S. in Software Engineering \- Riverside Tech University, Arcadia**
 
 \[08/2012 \- 05/2014\]: Software Design Patterns, Enterprise Application Development, Database Systems, Agile Engineering, Systems Programming.
 
-### **B.E. in Computer Science and Engineering, Dummy University, India**
+### **B.E. in Computer Science and Engineering, Dummy University, Verdania**
 
 \[09/2006 \- 06/2010\]: Data Structures, Operating Systems, Computer Networks, Object-Oriented Programming, Web Technologies.
 
