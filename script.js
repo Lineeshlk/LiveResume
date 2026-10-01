@@ -90,7 +90,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return response.text();
         })
-        .then(markdown => {
+        .then(async markdown => {
+            // Measure against the real face: Computer Modern loads from a CDN, and
+            // paginating before it swaps in sizes every page with the fallback font,
+            // so the pages overflow once it lands. document.fonts.ready alone is not
+            // enough here - a face is only fetched once rendered text asks for it, and
+            // nothing has asked yet - so request the weights explicitly first.
+            // Cap the wait so a slow or blocked CDN still renders the resume.
+            await Promise.race([
+                Promise.all([
+                    document.fonts.load('11pt "Computer Modern Serif"'),
+                    document.fonts.load('bold 11pt "Computer Modern Serif"'),
+                    document.fonts.load('italic 11pt "Computer Modern Serif"')
+                ]).then(() => document.fonts.ready),
+                new Promise(resolve => setTimeout(resolve, 5000))
+            ]);
+
             // Preserve explicit empty newlines as visual space
             // In markdown \n\n is a standard block break. Any extra \n will become a <br>
             let processedMarkdown = markdown.replace(/\n\n\n+/g, match => {
@@ -140,17 +155,60 @@ document.addEventListener('DOMContentLoaded', () => {
             let current = createNewPage();
             resumeContent.appendChild(current.page);
 
-            elements.forEach(el => {
+            function startNewPage() {
+                current = createNewPage();
+                resumeContent.appendChild(current.page);
+            }
+
+            function placeElement(el) {
                 current.inner.appendChild(el);
-                
+
                 // Measure the unconstrained inner div height, not the fixed 11in parent
-                if (current.inner.offsetHeight > maxPageHeight) {
-                    // It overflowed, create a new page and move this element
-                    current = createNewPage();
-                    resumeContent.appendChild(current.page);
-                    current.inner.appendChild(el);
+                if (current.inner.offsetHeight <= maxPageHeight) return;
+
+                // A list can be broken across pages: fill the remaining space with the
+                // items that still fit and carry the rest over. Without this a long list
+                // is atomic, so it jumps to the next page whole and leaves a gap behind.
+                if ((el.tagName === 'UL' || el.tagName === 'OL') && el.children.length > 1) {
+                    const items = Array.from(el.children);
+                    const listStart = parseInt(el.getAttribute('start') || '1', 10);
+                    items.forEach(item => el.removeChild(item));
+
+                    let carried = null;
+                    items.forEach((item, index) => {
+                        if (!carried) {
+                            el.appendChild(item);
+                            if (current.inner.offsetHeight <= maxPageHeight) return;
+                            el.removeChild(item);
+                            carried = el.cloneNode(false);
+                            // Keep ordered-list numbering continuous across the break
+                            if (carried.tagName === 'OL') {
+                                carried.setAttribute('start', (listStart + index).toString());
+                            }
+                        }
+                        carried.appendChild(item);
+                    });
+
+                    if (!carried) return;
+
+                    if (el.children.length > 0) {
+                        // Part of the list stayed behind; continue on a fresh page
+                        startNewPage();
+                        placeElement(carried);
+                        return;
+                    }
+
+                    // Not even one item fit - move the whole list down
+                    el.remove();
+                    el = carried;
                 }
-            });
+
+                // Anything else moves to the next page intact
+                startNewPage();
+                current.inner.appendChild(el);
+            }
+
+            elements.forEach(placeElement);
 
             // Smoothly animate in
             let opacity = 0;

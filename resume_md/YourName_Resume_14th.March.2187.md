@@ -5,7 +5,7 @@ Mission Commander @ Helios Deep Space Agency | Tranquilis Station, Luna Free Ter
 ## **CAREER PROFILE**
 
 * Career astronaut with 4,100+ days of cumulative off-world duty across 11 crewed missions, including two outer-system transits beyond the asteroid belt. Strong verbal and written communicator with flight directors, crew, and mission leadership.
-* Recognized contributor with over 15+ peer-reviewed publications on closed-loop life support and long-duration crew health. Prior experience with flight-readiness review for commercial launch providers. Experienced in autonomous habitat and deep-space comms architectures.
+* Recognized contributor with 15+ peer-reviewed publications on closed-loop life support and long-duration crew health. Prior experience with flight-readiness review for commercial launch providers.
 * Hands-on expertise in EVA operations, fusion-electric propulsion, and habitat systems engineering on orbital and surface infrastructure. Strong engineering experience in guidance and navigation, avionics, and telemetry analysis.
 * Keen listener and creative problem-solver with life-long learner ethos. Currently pursuing M.Sc. in Habitat Systems Management @ Tranquilis Institute.
 * Volunteer: Flight mentor at the Arcadian Cadet Academy, Guest lecturer @ Rivermouth Astronautics College, STEM educator at [DummyOrg.org](https://www.dummyorg.org)
@@ -29,12 +29,10 @@ Mission Commander @ Helios Deep Space Agency | Tranquilis Station, Luna Free Ter
 #### Mission Commander – Outer System Programs (Jan 2185 – Present)
 
 * **Mission commander for 'Kestrel VII'**: A **44-month crewed survey** of the Jovian moon system. The mission returned the first continuous subsurface-ocean telemetry from Europa and was featured at the agency's biennial exploration summit.
-* Joined as a founding Flight Systems Lead and **took the vehicle from clean sheet to flight certification**, leading crew systems architecture and integration. Promoted to Commander (within 1 year), **driving mission execution** and influencing the flight manifest with strong understanding of crew requirements and competing agency programs.
+* Joined as a founding Flight Systems Lead and **took the vehicle from clean sheet to flight certification**. Promoted to Commander (within 1 year), **driving mission execution** and influencing the flight manifest.
 * Reduced average pre-launch systems checkout from 4 weeks to under 5 days by **automating consumables verification and fault injection** across the integration stack.
 * Demonstrated **expertise in autonomy-assisted flight operations**, delivering a self-diagnosing habitat monitoring suite within 8 weeks. **Two design disclosures** pertaining to novel regolith-sintered shielding in the filing process.
-* **Scaled and led a mixed-crew team from 3 to 8 specialists**, working closely with leadership (Director of Flight Operations and Chief Astronaut). Led multiple crew readiness reviews and partner engagements through **cross-functional collaboration** with Payload and Public Outreach teams. Published mission logs to evangelize the program.
-
-
+* **Scaled and led a mixed-crew team from 3 to 8 specialists**, working closely with leadership (Director of Flight Operations and Chief Astronaut). Led crew readiness reviews and partner engagements through **cross-functional collaboration** with Payload and Public Outreach teams.
 
 ### **Meridian Orbital Systems | Northport, Arcadia & Ares Basin, Mars** | 2176-2184
 

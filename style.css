@@ -124,6 +124,13 @@ body.sans-serif-font {
     gap: 40px; /* Space between pages strictly for web preview */
 }
 
+/* Page content box. flow-root contains the first/last child's vertical
+   margins so offsetHeight reflects the full printed block height; without it
+   the trailing margin escapes measurement and the page overflows in print. */
+.page-inner {
+    display: flow-root;
+}
+
 /* Individual Paper Pages */
 .page {
     width: 8.5in;
